@@ -122,7 +122,7 @@ const BOTS: Bot[] = [
         id: '14',
         name: 'Market Auto Switcher',
         description: 'Automatically switches between markets with martingale support, take profit & stop loss controls for hands-free trading.',
-        fileName: 'Market_Auto_Switcher_Robot_by_www.tradepilothub.online_(1)_1779785919444.xml',
+        fileName: 'Market_Auto_Switcher_Robot_by_www.tradepilothub.online_1779787265470.xml',
         category: 'Auto Switcher',
         icon: '🔀',
     },
