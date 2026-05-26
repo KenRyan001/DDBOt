@@ -179,7 +179,7 @@ const AppHeader = observer(({ isAuthenticating }: TAppHeaderProps) => {
                     <Button
                         primary
                         onClick={() => {
-                            window.open(standalone_routes.signup);
+                            window.open('https://deriv.partners/rx?sidc=47D22125-BFDD-45E6-91D7-3F0A02129004&utm_campaign=dynamicworks&utm_medium=affiliate&utm_source=CU16629');
                         }}
                     >
                         <Localize i18n_default_text='Sign up' />
