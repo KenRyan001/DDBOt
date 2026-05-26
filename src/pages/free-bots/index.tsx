@@ -110,12 +110,32 @@ const BOTS: Bot[] = [
         category: 'Even/Odd',
         icon: '🎲',
     },
+    {
+        id: '13',
+        name: 'Binary V5 Expert Trader',
+        description: 'Advanced expert trader bot using over/under digit strategy with trend analysis and smart stop-loss management.',
+        fileName: 'Binary_V5_Expert_Trader_1779785904290.xml',
+        category: 'Expert',
+        icon: '🏆',
+    },
+    {
+        id: '14',
+        name: 'Market Auto Switcher',
+        description: 'Automatically switches between markets with martingale support, take profit & stop loss controls for hands-free trading.',
+        fileName: 'Market_Auto_Switcher_Robot_by_www.tradepilothub.online_(1)_1779785919444.xml',
+        category: 'Auto Switcher',
+        icon: '🔀',
+    },
 ];
 
 const FreeBots = observer(() => {
-    const { dashboard } = useStore();
+    const store = useStore();
     const [loadingBotId, setLoadingBotId] = useState<string | null>(null);
     const [selectedCategory, setSelectedCategory] = useState<string>('All');
+
+    if (!store) return null;
+
+    const { dashboard } = store;
 
     const categories = ['All', ...Array.from(new Set(BOTS.map(bot => bot.category)))];
 
